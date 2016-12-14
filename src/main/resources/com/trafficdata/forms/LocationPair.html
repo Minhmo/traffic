@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta charset="UTF-8" name="vaadin-version" content="7.7.0">
+ </head> 
+ <body> 
+  <vaadin-vertical-layout spacing width="592px" height="728px" margin> 
+   <vaadin-label style-name="h1" size-auto plain-text>
+     Location pairing form 
+   </vaadin-label> 
+   <vaadin-horizontal-layout spacing :expand> 
+    <vaadin-combo-box _id="from"> 
+     <option>Option 1</option> 
+     <option>Option 2</option> 
+     <option>Option 3</option> 
+    </vaadin-combo-box> 
+    <vaadin-combo-box _id="to"> 
+     <option>Option 1</option> 
+     <option>Option 2</option> 
+     <option>Option 3</option> 
+    </vaadin-combo-box> 
+   </vaadin-horizontal-layout> 
+   <vaadin-horizontal-layout :expand> 
+    <vaadin-button style-name="primary" plain-text _id="saveButton">
+      Save 
+    </vaadin-button> 
+   </vaadin-horizontal-layout> 
+   <vaadin-vertical-layout spacing :expand="8"> 
+    <vaadin-table selectable height="379px" _id="pairTable" :expand="7"> 
+     <table> 
+      <colgroup> 
+       <col property-id="Project"> 
+       <col property-id="Status"> 
+      </colgroup> 
+      <tbody> 
+       <tr item-id="1"> 
+        <td>Customer Project 1</td> 
+        <td>OK</td> 
+       </tr> 
+       <tr item-id="2"> 
+        <td>Customer Project 2</td> 
+        <td>OK</td> 
+       </tr> 
+       <tr item-id="3"> 
+        <td>Customer Project 3</td> 
+        <td>OK</td> 
+       </tr> 
+       <tr item-id="4"> 
+        <td>Customer Project 4</td> 
+        <td>OK</td> 
+       </tr> 
+       <tr item-id="5"> 
+        <td>Customer Project 5</td> 
+        <td>OK</td> 
+       </tr> 
+       <tr item-id="6"> 
+        <td>Customer Project 6</td> 
+        <td>OK</td> 
+       </tr> 
+       <tr item-id="7"> 
+        <td>Customer Project 7</td> 
+        <td>OK</td> 
+       </tr> 
+       <tr item-id="8"> 
+        <td>Customer Project 8</td> 
+        <td>OK</td> 
+       </tr> 
+       <tr item-id="9"> 
+        <td>Customer Project 9</td> 
+        <td>OK</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </vaadin-table> 
+    <vaadin-horizontal-layout spacing :expand> 
+     <vaadin-button style-name="danger" plain-text _id="deleteSelected">
+       Delete Selected 
+     </vaadin-button> 
+     <vaadin-button style-name="danger" plain-text _id="deleteAll">
+       Delete all 
+     </vaadin-button> 
+    </vaadin-horizontal-layout> 
+   </vaadin-vertical-layout> 
+  </vaadin-vertical-layout>  
+ </body>
+</html>

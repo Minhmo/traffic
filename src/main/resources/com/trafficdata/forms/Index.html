@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta charset="UTF-8" name="vaadin-version" content="7.7.0">
+ </head> 
+ <body> 
+  <vaadin-vertical-layout style-name="root-layout navigation-template-vaadin" responsive size-full> 
+   <vaadin-css-layout style-name="header-bar" width-full _id="header_bar"></vaadin-css-layout> 
+   <vaadin-horizontal-layout style-name="main-area-layout" size-full _id="main_area" :expand> 
+    <vaadin-css-layout style-name="side-bar" height-full _id="side_bar"> 
+     <vaadin-native-button icon="fonticon://FontAwesome/f080" style-name="menu-button selected" width-full height="80px" plain-text _id="menuButton1">
+       Locations 
+     </vaadin-native-button> 
+     <vaadin-native-button icon="fonticon://FontAwesome/f0f6" style-name="menu-button" width-full height="80px" plain-text _id="menuButton2">
+       Location pair 
+     </vaadin-native-button> 
+    </vaadin-css-layout> 
+    <vaadin-panel style-name="scroll-panel" responsive size-full _id="scroll_panel" :expand></vaadin-panel> 
+   </vaadin-horizontal-layout> 
+  </vaadin-vertical-layout>  
+ </body>
+</html>
